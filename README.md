@@ -1,59 +1,55 @@
 # CdbFront
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+## - FrontEnd - Angular. 
 
-## Development server
+## Pré-requisitos
 
-To start a local development server, run:
+- Node.js (versão 12 ou superior)
+- Angular CLI (versão 10 ou superior)
 
-```bash
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/danielslima22/cdbFront.git
+   cd cdbFront
+
+2. Instale as dependências:
+
+bash
+npm install
+
+## Executando o Projeto
+Para iniciar o servidor de desenvolvimento, execute:
+
+bash
 ng serve
-```
+O projeto estará disponível em http://localhost:4200/.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Executando os Testes
 
-## Code scaffolding
+Para executar os testes unitários, use o comando:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+bash
 ng test
-```
 
-## Running end-to-end tests
+Para executar os testes de ponta a ponta (e2e), use o comando:
 
-For end-to-end (e2e) testing, run:
-
-```bash
+bash
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Estrutura do Projeto
 
-## Additional Resources
+src/app: Contém os componentes e serviços do projeto.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+components: Contém os componentes do projeto.
+investment-form: Componente do formulário de simulação de CDB.
+investment-result: Componente para exibir o resultado da simulação de CDB.
+services: Contém os serviços do projeto.
+cdb.service.ts: Serviço responsável por calcular os valores de CDB.
+
+Tecnologias Utilizadas
+Angular
+Angular Material
+RxJS
