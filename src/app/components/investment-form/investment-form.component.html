@@ -1,0 +1,23 @@
+<mat-card class="container mt-5">
+  <mat-card-content>
+    <h3 class="mb-4">Simulador de CDB</h3>
+
+    <form [formGroup]="investmentForm" (ngSubmit)="calcular()">
+      <mat-form-field appearance="fill" class="mb-3">
+        <mat-label>Valor Inicial</mat-label>
+        <input matInput type="number" formControlName="valorInicial" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mb-3">
+        <mat-label>Prazo (meses)</mat-label>
+        <input matInput type="number" formControlName="prazoMeses" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="investmentForm.invalid">
+        Calcular
+      </button>
+    </form>
+
+    <app-investment-result *ngIf="resultado()" [result]="resultado()"></app-investment-result>
+  </mat-card-content>
+</mat-card>
